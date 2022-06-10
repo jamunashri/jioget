@@ -1,106 +1,129 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './index.css'
 
 const Authentication = () => {
-  const container = document.querySelector(".container");
-
+  const [uname, setUname] = useState('')
+  const [password, setPassword] = useState('')
+  const [cpassword, setCPassword] = useState('')
+  const [email, setEmail] = useState('')
+  
+  const onLogin = (e) => {
+    e.preventDefault()
+    if(uname && password) {
+      
+    }
+  }
+  const onRegister = (e) => {
+    e.preventDefault()
+    if(uname && password) {
+      
+    }
+  }
   const signin = () => {
+    const container = document.querySelector(".container");
     container.classList.remove("sign-up-mode");
   }
   const signup = () => {
+    const container = document.querySelector(".container");
     container.classList.add("sign-up-mode");
   }
   return (
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="#" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+    <div className="container">
+      <div className="forms-container">
+        <div className="signin-signup">
+          {/* Signin */}
+          <form action="#" className="sign-in-form" onClick={(e) => onLogin(e)}>
+            <h2 className="title">Sign in</h2>
+            <div className="input-field">
+              <i className="fas fa-user"></i>
+              <input type="text" placeholder="Username" name="uname" value={uname} handleChange={(e) => setUname(e.target.value) }/>
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+            <div className="input-field">
+              <i className="fas fa-lock"></i>
+              <input type="password" placeholder="Password" name='password' value={password} handleChange={(e) => setPassword(e.target.value) }/>
             </div>
-            <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+            <input type="submit" value="Login" className="btn solid" />
+            <p className="social-text">Or Sign in with social platforms</p>
+            <div className="social-media">
+              <a href="#" className="social-icon">
+                <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
+              <a href="#" className="social-icon">
+                <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
+              <a href="#" className="social-icon">
+                <i className="fab fa-google"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
+              <a href="#" className="social-icon">
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+          {/* signup  */}
+          <form action="#" className="sign-up-form" onClick={(e) => onRegister(e)}>
+            <h2 className="title">Sign up</h2>
+            <div className="input-field">
+              <i className="fas fa-user"></i>
+              <input type="text" placeholder="Username" name='uname' value={uname} handleChange={(e) => setUname(e.target.value)}/>
             </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+            <div className="input-field">
+              <i className="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" name='email' value={email} handleChange={(e) => setEmail(e.target.value)}/>
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+            <div className="input-field">
+              <i className="fas fa-lock"></i>
+              <input type="password" placeholder="Password" name='password' value={password} handleChange={(e) => setPassword(e.target.value) }/>
             </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+            <div className="input-field">
+              <i className="fas fa-lock"></i>
+              <input type="password" placeholder="Confirm Password" name='cpassword' value={cpassword} handleChange={(e) => setCPassword(e.target.value) }/>
+            </div>
+            <input type="submit" className="btn" value="Sign up" />
+            <p className="social-text">Or Sign up with social platforms</p>
+            <div className="social-media">
+              <a href="#" className="social-icon">
+                <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
+              <a href="#" className="social-icon">
+                <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
+              <a href="#" className="social-icon">
+                <i className="fab fa-google"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
+              <a href="#" className="social-icon">
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </form>
         </div>
       </div>
 
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
+      <div className="panels-container">
+        <div className="panel left-panel">
+          <div className="content">
             <h3>New here ?</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
               ex ratione. Aliquid!
             </p>
-            <button class="btn transparent" id="sign-up-btn" onClick={() => signup()}>
+            <button className="btn transparent" id="sign-up-btn" onClick={() => signup()}>
               Sign up
             </button>
           </div>
-          <img src="img/log.svg" class="image" alt="" />
+          <img src="img/log.svg" className="image" alt="" />
         </div>
-        <div class="panel right-panel">
-          <div class="content">
+        <div className="panel right-panel">
+          <div className="content">
             <h3>One of us ?</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               laboriosam ad deleniti.
             </p>
-            <button class="btn transparent" id="sign-in-btn" onClick={() => signin()}>
+            <button className="btn transparent" id="sign-in-btn" onClick={() => signin()}>
               Sign in
             </button>
           </div>
-          <img src="img/register.svg" class="image" alt="" />
+          <img src="img/register.svg" className="image" alt="" />
         </div>
       </div>
     </div>
