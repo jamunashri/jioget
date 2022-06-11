@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
-import Authentication  from './_pages/Authentication';
+import { Authentication, ForgetPassword} from './_pages/index';
 
 function App() {
   return (
-    <Authentication />
+    <Routes>
+      <Route exact path={'/'} element={<Authentication />} />
+      <Route path={'/forget'} element={ <ForgetPassword />} />
+    </Routes>
   );
 }
 

@@ -127,6 +127,10 @@ form.sign-in-form {
   transition: 0.3s;
 }
 
+.forget {
+  margin-left: -12rem;
+}
+
 .social-icon:hover {
   color: #4481eb;
   border-color: #4481eb;
