@@ -18,7 +18,6 @@ class Authentication extends React.Component {
     const { uname, password } = this.state
     e.preventDefault()
     if (uname && password) {
-
     }
   }
   onRegister = (e) => {
@@ -49,7 +48,7 @@ class Authentication extends React.Component {
         <div className="forms-container">
           <div className="signin-signup">
             {/* Signin */}
-            <form className="sign-in-form" >
+            <form action="/home" className="sign-in-form" >
               <h2 className="title">Sign in</h2>
               <div className="input-field">
                 <i className="fas fa-user"></i>
