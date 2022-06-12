@@ -10,21 +10,31 @@ class Authentication extends React.Component {
       email: "",
       userName: '',
       pass: '',
-      cpass: ''
+      cpass: '',
+      error: ""
     }
-  }
 
+  }
   onLogin = (e) => {
     const { uname, password } = this.state
     e.preventDefault()
     if (uname && password) {
+      window.location.href = '/home'
+    } else {
+      this.setState({
+        error: 'Please enter all the details'
+      })
     }
   }
   onRegister = (e) => {
-    const { uname, password } = this.state
+    const { email, cpass, userName, pass } = this.state
     e.preventDefault()
-    if (uname && password) {
-
+    if (email&& cpass&& userName&& pass) {
+      window.location.href = '/home'
+    } else {
+      this.setState({
+        error: 'Please enter all the details'
+      })
     }
   }
   handleChange = (e) => {
@@ -42,13 +52,13 @@ class Authentication extends React.Component {
     container.classList.add("sign-up-mode");
   }
   render() {
-    const { uname, password, email, cpass, userName, pass } = this.state
+    const { uname, password, email, cpass, userName, pass, error } = this.state
     return (
       <div className="container" >
         <div className="forms-container">
           <div className="signin-signup">
             {/* Signin */}
-            <form action="/home" className="sign-in-form" >
+            <form className="sign-in-form" >
               <h2 className="title">Sign in</h2>
               <div className="input-field">
                 <i className="fas fa-user"></i>
@@ -60,6 +70,7 @@ class Authentication extends React.Component {
               </div>
               <a href="/forget" className='forget'>Forget Password ?</a>
               <input type="submit" value="Login" className="btn solid" onClick={(e) => this.onLogin(e)} />
+              {error && <p className='error-text'>{error}</p>}
               <p className="social-text">Or Sign in with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
@@ -96,6 +107,7 @@ class Authentication extends React.Component {
                 <input type="password" placeholder="Confirm Password" name='cpass' value={cpass} onChange={(e) => this.handleChange(e)} />
               </div>
               <input type="submit" className="btn" value="Sign up" onClick={(e) => this.onRegister(e)} />
+              {error && <p className='error-text'>{error}</p>}
               <p className="social-text">Or Sign up with social platforms</p>
               <div className="social-media">
                 <a href="#" className="social-icon">
