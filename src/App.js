@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
-import { Authentication, ForgetPassword, Home, WishList, Product } from './_pages/index';
+import { Authentication, ForgetPassword, Home, WishList, Product, SingleProduct } from './_pages/index';
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
       <Route path={'/home'} element={ <Home />} />
       <Route path={'/wishlist'} element={ <WishList />} />
       <Route path={'/product'} element={ <Product />} />
+      <Route path={'/singleProduct'} element={ <SingleProduct />} />
+      
       
     </Routes>
   );
