@@ -9,8 +9,7 @@ function App() {
       <Route path={'/forget'} element={ <ForgetPassword />} />
       <Route path={'/home'} element={ <Home />} />
       <Route path={'/wishlist'} element={ <WishList />} />
-      <Route path={'/product'} element={ <Product />} />
-      <Route path={'/singleProduct'} element={ <SingleProduct />} />
+      <Route path={'/product'} element={ <Products />} />
       
       
     </Routes>

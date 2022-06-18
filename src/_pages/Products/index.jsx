@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useProductsContext } from "../../_context/products_context";
-import AddToCart from "../../components/Cart/AddToCart";
-import PageHero from "../../components/PageHero/PageHero";
+/* import AddToCart from "../../components/Cart/AddToCart" */;
 import "../../App.css";
 
 const ProductList = () => {
   const { products } = useProductsContext();
   return (
     <>
-      <PageHero item={products.length} name="PRODUCTS" />
+      <div item={products.length} name="PRODUCTS" />
       <div className="cocktails-center">
         {products.map((product) => {
           const { id, image, name, price } = product;

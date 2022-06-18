@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../../context/cart_context";
 import AmountButtons from "../AmountButtons/AmountButtons";
 import "./Cart.css";
 
