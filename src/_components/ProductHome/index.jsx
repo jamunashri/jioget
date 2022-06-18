@@ -16,7 +16,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546072/actress-aathmika-silk-saree-photos-hd-kannai-nambathey-movie-launch-1776dd7_xh2lrc.jpg"
                         alt="poster"
                     />
                 </div>
@@ -28,7 +28,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546062/412yc_VdGdL_b5jp4t.jpg"
                         alt="poster"
                     />
                 </div>
@@ -40,7 +40,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546197/bella-pon-fruitsia-y9HsMX3-mUY-unsplash_dwzyq8.jpg"
                         alt="poster"
                     />
                 </div>
@@ -55,7 +55,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546184/bulbul-ahmed-xTrp1WOq2Do-unsplash_sxpfbz.jpg"
                         alt="poster"
                     />
                 </div>
@@ -67,7 +67,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546072/actress-aathmika-silk-saree-photos-hd-kannai-nambathey-movie-launch-1776dd7_xh2lrc.jpg"
                         alt="poster"
                     />
                 </div>
@@ -79,7 +79,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546044/IndianSaree_2_zhzfo4.jpg"
                         alt="poster"
                     />
                 </div>
@@ -94,7 +94,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546045/IndianSaree_3_rjkqod.jpg"
                         alt="poster"
                     />
                 </div>
@@ -106,7 +106,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546062/412yc_VdGdL_b5jp4t.jpg"
                         alt="poster"
                     />
                 </div>
@@ -118,7 +118,7 @@ const ProductHome = () => {
                     </div>
                     <img
                         className="Poster"
-                        src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0114252-0ab0-4020-a7e9-bf9e1c1543a5/sportswear-tech-fleece-older-hoodie-34Fhn1.png"
+                        src="https://res.cloudinary.com/nithi-tex/image/upload/v1655546044/IndianSaree_2_zhzfo4.jpg"
                         alt="poster"
                     />
                 </div>
