@@ -1,6 +1,5 @@
 import "./index.css";
-import { useContext } from "react";
-export default function FilterSideBar({ displayFilters }) {
+export default function Sidebar({ displayFilters }) {
   const categories = ["top", "bottom", "footwear"];
   return (
     <div className={`Sidebar ${displayFilters ? "" : "Sidebar-hidden"}`}>
