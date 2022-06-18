@@ -77,7 +77,7 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li className={`Navbar-item ${isOpen ? "opac" : ""}`}>
-          <NavLink onClick={handleClose} className="Navbar-links" to="/Cart">
+          <NavLink onClick={handleClose} className="Navbar-links" to="/cart">
             <i className="fas fa-shopping-cart icon"></i>
             <div>Cart</div>
           </NavLink>
