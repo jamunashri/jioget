@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import ProductHome from "./ProductHome";
 import Footer from "./Footer";
-import SideBar from "./Sidebar";
+import SideBar from "./SideBar";
 import ItemCard from "./ItemCard";
 
 export  {

@@ -1,6 +1,6 @@
 import React, {useEffect,useState} from "react";
 import { ItemCard, Navbar } from "../../_components";
-import Sidebar from "../../_components/Sidebar";
+import Sidebar from "../../_components/SideBar";
 
 const Product = () => {
     const [filteredProducts, setFilterProducts] = useState([])
