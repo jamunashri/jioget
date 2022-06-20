@@ -1,15 +1,15 @@
 import Navbar from "./Navbar";
 import ProductHome from "./ProductHome";
 import Footer from "./Footer";
-import SideBar from "./SideBar";
+import Sidebar from "./Sidebar";
 import ItemCard from "./ItemCard";
-import MainContent from "./mainContent";
+import MainContent from "./MainContent";
 
 export  {
     Navbar,
     ProductHome,
     Footer,
-    SideBar,
+    Sidebar,
     ItemCard,
     MainContent
 }

@@ -1,28 +1,28 @@
 import React from "react";
 import './index.css'
 
-const ItemCard = () => {
+const ItemCard = ({item}) => {
 return (
     <div className="Item-container">
       <div className="Item-details">
-        {/* <img className="Item-image" src={item.image} alt="" /> */}
+        <img className="Item-image" src={item.image} alt="" />
         <div className="Item-desc">
           <div className="Item-details-main">
             <div className="Item-name-container">
-              {/* <div className="Item-brand">{item.brand}</div>
-              <div className="Item-name">{item.name}</div> */}
+              <div className="Item-brand">{item.brand}</div>
+              <div className="Item-name">{item.name}</div>
             </div>
             <div className="Item-price">
               <div>
                 <i class="fas fa-rupee-sign icon-rupee"></i>
-                {/* {item.price} */}
+                {item.price}
               </div>
               <div>
                 <span className="orignal-price">
                   Rs.
-                  {/* {item.price} */}
+                  {item.price}
                 </span>
-                {/* <span className="discount-percent">{item.discount}%</span> */}
+                <span className="discount-percent">{item.discount}%</span>
               </div>
             </div>
           </div>

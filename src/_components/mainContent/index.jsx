@@ -1,9 +1,9 @@
-import React from 'react'
-import product_card from "../_data/product_data";
+import React,{useState} from 'react'
+// import product_card from "../_data/product_data";
 
 const MainContent = () => {
-    console.log(product_card);
-    const listItems = product_card.map((item) =>
+    const [ productCard, setProductCard] = useState([])
+    const listItems = productCard.map((item) =>
         <div className="card" key={item.id}>
             <div className="card_img">
                 <img src={item.thumb} />
