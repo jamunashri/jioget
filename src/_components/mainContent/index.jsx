@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-// import product_card from "../_data/product_data";
+//import product_data from "../_data/product_data";
 
 const MainContent = () => {
     const [ productCard, setProductCard] = useState([])

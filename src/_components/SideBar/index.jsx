@@ -1,5 +1,5 @@
 import "./index.css";
-export default function Sidebar({ displayFilters }) {
+export default function SideBar({ displayFilters }) {
   const categories = ["top", "bottom", "footwear"];
   return (
     <div className={`Sidebar ${displayFilters ? "" : "Sidebar-hidden"}`}>
