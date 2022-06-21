@@ -3,7 +3,7 @@ import ProductHome from "./ProductHome";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import ItemCard from "./ItemCard";
-import mainContent from "./mainContent";
+import MainContent from "./MainContent";
 
 export  {
     Navbar,
@@ -11,5 +11,5 @@ export  {
     Footer,
     Sidebar,
     ItemCard,
-    mainContent
+    MainContent
 }
