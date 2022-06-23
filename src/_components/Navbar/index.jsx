@@ -21,7 +21,7 @@ export default function Navbar() {
         </NavLink>
       </div>
       <div
-        className={`Navbar-items Navbar-items-left ${!isOpen ? "hidden" : ""}`}
+        className={`Navbar-items Navbar-items-left Rs.{!isOpen ? "hidden" : ""}`}
       >
         <li className="Navbar-item">
           <NavLink
@@ -53,7 +53,7 @@ export default function Navbar() {
       </div>
       <div className="flex-grow" />
       <div
-        className={`Navbar-items Navbar-items-right ${!isOpen ? "hidden" : ""}`}
+        className={`Navbar-items Navbar-items-right Rs.{!isOpen ? "hidden" : ""}`}
       >
         <li className="Navbar-item">
           <a
@@ -76,7 +76,7 @@ export default function Navbar() {
             <div>Wishlist</div>
           </NavLink>
         </li>
-        <li className={`Navbar-item ${isOpen ? "opac" : ""}`}>
+        <li className={`Navbar-item Rs.{isOpen ? "opac" : ""}`}>
           <NavLink onClick={handleClose} className="Navbar-links" to="/cart">
             <i className="fas fa-shopping-cart icon"></i>
             <div>Cart</div>
