@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { mainContent } from './_components';
+import {  MainContent } from './_components';
 import { Authentication, ForgetPassword, Home, WishList ,Cart , Product } from './_pages/index';
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Route path={'/wishlist'} element={ <WishList />} />
       <Route path={'/cart'} element={<Cart />} />
       <Route path={'/product'} element={<Product />} />
-      <Route path={'/'} element={<mainContent/>} />
+      <Route path={'/product/1'} element={<MainContent/>} />
     </Routes>
   );
 }
