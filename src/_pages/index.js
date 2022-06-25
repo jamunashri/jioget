@@ -3,7 +3,7 @@ import ForgetPassword from "./ForgetPassword";
 import Home from "./Home";
 import WishList from "./WishList";
 import Cart from "./Cart";
-import product from "./product";
+import Product from "./Product";
 import Dashboard from "./Dashboard";
 import newProduct from "./newProduct";
 import newUser from "./newUser";
@@ -18,7 +18,7 @@ export {
     Home,
     WishList,
     Cart,
-    product,
+    Product,
     Dashboard,
     newProduct,
     productList,
