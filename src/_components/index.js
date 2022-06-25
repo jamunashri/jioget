@@ -5,7 +5,7 @@ import ItemCard from "./ItemCard";
 import Chart from "./Chart";
 import FeaturedInfo from "./FeaturedInfo";
 import Sidebar from "./Sidebar";
-import topbar from "./topbar";
+import topbar from "./Topbar";
 import WidgetLg from "./widgetLg";
 import WidgetSm from "./widgetSm"
 import MainContent from "./MainContent";
