@@ -1,8 +1,12 @@
-.home{
+.dashboard{
     flex: 4;
 }
 
-.homeWidgets{
+.dashboardWidgets{
     display: flex;
     margin: 20px;
+}
+.featuredInfo{
+    display: flex
+;
 }

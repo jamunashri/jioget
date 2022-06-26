@@ -1,8 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import {  MainContent } from './_components';
-import { Authentication, ForgetPassword, Home, WishList ,Cart , Product, Dashboard } from './_pages/index';
-import NewProduct from './_pages/newProduct';
-import ProductList from './_pages/productList';
+import { Authentication, ForgetPassword, Home, WishList ,Cart , Product,Admin, Dashboard } from './_pages/index';
+import NewProduct from './_pages/NewProduct/index';
+import ProductList from './_pages/ProductList/index';
+import User from './_pages/User/index';
+import UserList from './_pages/UserList/index';
+import NewUser from './_pages/NewUser/index';
 function App() {
   return (
     <Routes>
@@ -11,11 +14,15 @@ function App() {
       <Route path={'/home'} element={ <Home />} />
       <Route path={'/wishlist'} element={ <WishList />} />
       <Route path={'/cart'} element={<Cart />} />
-      <Route path={'/product'} element={<Product />} />
-      <Route path={'/admin'} element={<Dashboard />} />
+      <Route path={'/product/1'} element={<MainContent />} />
+      <Route path={'/admin'} element={< Admin />} />
+      <Route path={'/dashboard'} element={<Dashboard />} />
       <Route path={'/newproduct'} element={<NewProduct />} />
       <Route path={'/productList'} element={<ProductList />} />
-      <Route path={'/product/1'} element={<MainContent/>} />
+      <Route path={'/product'} element={<Product />} />
+      <Route path={'./'} elememt ={<User />} />
+      <Route path={'./userList'} elememt ={<UserList />} />
+      <Route path={'./newUser'} element ={<NewUser />} />
     </Routes>
   );
 }

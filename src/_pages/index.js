@@ -3,13 +3,14 @@ import ForgetPassword from "./ForgetPassword";
 import Home from "./Home";
 import WishList from "./WishList";
 import Cart from "./Cart";
+import Admin from "./Admin"
 import Product from "./Product";
 import Dashboard from "./Dashboard";
-import newProduct from "./newProduct";
-import newUser from "./newUser";
-import productList from "./productList";
-import user from "./user";
-import userList from "./userList"
+import NewProduct from "./NewProduct";
+import NewUser from "./NewUser";
+import ProductList from "./ProductList";
+import User from "./User";
+import UserList from "./UserList"
 
 
 export {
@@ -18,11 +19,12 @@ export {
     Home,
     WishList,
     Cart,
+    Admin,
     Product,
     Dashboard,
-    newProduct,
-    productList,
-    user,
-    newUser,
-    userList
+    NewProduct,
+    ProductList,
+    User,
+    NewUser,
+    UserList
 }
